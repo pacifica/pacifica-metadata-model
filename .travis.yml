@@ -1,0 +1,14 @@
+language: python
+dist: xenial
+python: '3.7'
+script:
+  - pre-commit run -a
+  - pytest -xsv
+deploy:
+  provider: releases
+  api_key:
+    secure: UImScy/zkEB/w5gRD6rKWW9NJZ6e1bglDXqREIYcklhVpmhlOERtMktJRjNuiZsCDoyGy4iRg40sHquGwRvBfy1SahrnM49EOsYu0RMsNnn6GMSorJWcrsdJW4V1jymfiDAaUd8qUuVdsVKo595/Vf8pHghznUn69ovD01hWntbwUZ/Up9YlpdMvnp1inUIZCkQ975yXJDB7cDoTysrh0V68E1mYqLRkx4bqJV5kQXSdTGevpF/14valZmLksfAQdtqTTC53VQeIBvYztENOp+np/Py9mZdXwmujHy4Y3ZfLgX+IdNt4IWnOGz+/QE5alps18PnXX85WqV0w1T/M5DhDyibycLEssD8VoSpSKNfpq1Wl4l+eo/U6SWaDEsI2/mZJhaPU8wRzYKgID0PCVcoUZU/F8oO/8wbEzEoZ444sGslf5ez6x9XtPGHySLLeqNImXTtuKO7Sx9ngjsFCLNm9T7DAKhDJOf7lGqJf+S0SqmFn8WDgiYxLmkJ3Z9DADJNBmKS/WcfM0pKN7whM6diCkAT2z8m8/RaBZF4SHwH5yCZkcWx7K4Y4nc/eqyNHwCfA2sUcZU5oF6Qp3bpCvC4s8yMdNp5SSHM0ov+KJ4Kth0a1/vxECDLaoEclIdAtYTrtfrbQMg3w+g0POtFxmMsoaBXuAg2nNEwpWnjv2Ds=
+  file: ''
+  on:
+    repo: pacifica/pacifica-metadata-model
+    tags: true
