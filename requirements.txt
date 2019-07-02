@@ -1,0 +1,6 @@
+jsonschema
+pep257
+pre-commit
+pylint
+pytest
+requests

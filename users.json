@@ -1,0 +1,31 @@
+{
+  "fields": [
+    {
+      "constraints": {
+        "required": true,
+        "unique": true
+      },
+      "description": "This is the universally unique identifier (uuid) for the user.",
+      "format": "uuid",
+      "name": "uuid",
+      "title": "The Universally Unique User ID.",
+      "type": "string"
+    },
+    {
+      "constraints": {
+        "required": false,
+        "unique": true
+      },
+      "description": "The ID for the User in the system.",
+      "name": "id",
+      "title": "The User ID.",
+      "type": "number"
+    },
+    {
+      "description": "The users first name.",
+      "name": "first_name",
+      "title": "Users First Name.",
+      "type": "string"
+    }
+  ]
+}
