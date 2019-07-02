@@ -6,25 +6,68 @@
         "unique": true
       },
       "description": "This is the universally unique identifier (uuid) for the user.",
-      "format": "uuid",
-      "name": "uuid",
+      "name": "id",
       "title": "The Universally Unique User ID.",
+      "type": "integer"
+    },
+    {
+      "constraints": {
+        "maxLength": 255,
+        "required": true
+      },
+      "description": "The users first name.",
+      "name": "first_name",
+      "title": "Users First Name.",
       "type": "string"
     },
     {
       "constraints": {
-        "required": false,
-        "unique": true
+        "maxLength": 255,
+        "required": true
       },
-      "description": "The ID for the User in the system.",
-      "name": "id",
-      "title": "The User ID.",
-      "type": "number"
+      "description": "The users middle initial.",
+      "name": "middle_initial",
+      "title": "Users Middle Initial.",
+      "type": "string"
     },
     {
-      "description": "The users first name.",
-      "name": "first_name",
-      "title": "Users First Name.",
+      "constraints": {
+        "maxLength": 255,
+        "required": true
+      },
+      "description": "The users last name.",
+      "name": "last_name",
+      "title": "Users Last Name.",
+      "type": "string"
+    },
+    {
+      "constraints": {
+        "maxLength": 255,
+        "required": true
+      },
+      "description": "The users network login.",
+      "name": "network_id",
+      "title": "Users Login ID.",
+      "type": "string"
+    },
+    {
+      "constraints": {
+        "maxLength": 255,
+        "required": true
+      },
+      "description": "The users email address.",
+      "name": "email_address",
+      "title": "Users EMail Address.",
+      "type": "string"
+    },
+    {
+      "constraints": {
+        "maxLength": 255,
+        "required": true
+      },
+      "description": "The users string encoding.",
+      "name": "encoding",
+      "title": "Encoding.",
       "type": "string"
     }
   ]

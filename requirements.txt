@@ -1,6 +1,8 @@
 jsonschema
+pacifica-metadata==0.10.3
 pep257
 pre-commit
 pylint
 pytest
 requests
+tableschema-sql
